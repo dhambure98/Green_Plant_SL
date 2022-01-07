@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loadingPageContext" prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoadingPageFormController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1439.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/loarding.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="clickbutton" layoutX="556.0" layoutY="290.0" onAction="#openLoginForm" prefHeight="35.0" prefWidth="188.0" stylesheets="@../style.css" text="S I G N    U P">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

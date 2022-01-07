@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminCotext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashboardFormController">
+   <children>
+      <VBox fx:id="admindashboardAnchorPane" prefHeight="650.0" prefWidth="260.0" stylesheets="@../style.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/admin.png" />
+               </image></ImageView>
+            <Button fx:id="btnAdminHome" mnemonicParsing="false" onAction="#homeOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #8dd65d; -fx-border-color: #57b94a; -fx-border-radius: 5;" stylesheets="@../style.css" text="Home" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="12.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPlantCategories" mnemonicParsing="false" onAction="#plantCategoriesOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #8dd65d; -fx-border-color: #57b94a; -fx-border-radius: 5;" stylesheets="@../style.css" text="Plant Categories " textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="12.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAddPlant" mnemonicParsing="false" onAction="#plantProductionOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-border-radius: 5; -fx-background-color: #8dd65d; -fx-border-color: #57b94a;" stylesheets="@../style.css" text="Add Plant " textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="12.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEmployee" mnemonicParsing="false" onAction="#employeeOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-border-radius: 5; -fx-background-color: #8dd65d; -fx-border-color: #57b94a;" stylesheets="@../style.css" text="Employee" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="12.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSupplier" mnemonicParsing="false" onAction="#supplierOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-border-radius: 5; -fx-background-color: #8dd65d; -fx-border-color: #57b94a;" text="Supplier" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="12.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCustomer" mnemonicParsing="false" onAction="#customerOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #8dd65d; -fx-border-color: #57b94a; -fx-border-radius: 5;" text="Customer" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="12.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPayment" mnemonicParsing="false" onAction="#paymentOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #8dd65d; -fx-border-color: #57b94a; -fx-border-radius: 5;" text="Payement" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="12.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSettings" mnemonicParsing="false" onAction="#settingsOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #8dd65d; -fx-border-color: #57b94a; -fx-border-radius: 5;" text="Settings" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="12.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLogOut" mnemonicParsing="false" onAction="#logOutOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #8dd65d; -fx-border-color: #57b94a; -fx-border-radius: 5;" text="Log Out" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="12.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></VBox>
+      <AnchorPane fx:id="loardPane" layoutX="260.0" layoutY="50.0" prefHeight="600.0" prefWidth="1040.0">
+         <children>
+            <Pane fx:id="adminPaneOne" layoutX="680.0" layoutY="32.0" prefHeight="212.0" prefWidth="321.0" stylesheets="@../style.css">
+               <children>
+                  <Label layoutX="32.0" layoutY="14.0" text="Contact Detailes" textFill="#656565">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="108.0" layoutY="45.0" text="Mr : ABC  (Admin)" textFill="#656565">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="108.0" layoutY="75.0" text="Contact No : 0775584557" textFill="#656565">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="56.0" layoutX="44.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/telephone.png" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="171.0" layoutY="27.0" prefHeight="3.0" prefWidth="123.0" />
+                  <ImageView fitHeight="50.0" fitWidth="46.0" layoutX="46.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/compass.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="32.0" layoutY="112.0" text="Discovery" textFill="#656565">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="108.0" layoutY="144.0" text="Last Seen : 02.10.2021" textFill="#656565">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="108.0" layoutY="167.0" text="Status : Finished" textFill="#656565">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="118.0" layoutY="123.0" prefHeight="3.0" prefWidth="176.0" />
+               </children></Pane>
+            <ImageView fitHeight="59.0" fitWidth="69.0" layoutX="952.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/potted_plant.png" />
+               </image>
+            </ImageView>
+            <Separator prefWidth="200.0" />
+            <Separator layoutX="36.0" layoutY="275.0" prefHeight="3.0" prefWidth="959.0" />
+            <Separator layoutX="325.0" layoutY="276.0" orientation="VERTICAL" prefHeight="278.0" prefWidth="1.0" />
+            <Label layoutX="67.0" layoutY="373.0" text="No of Plant Productions">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label layoutX="110.0" layoutY="416.0" text="Indoor Plants" textFill="#656565">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="103.0" layoutY="476.0" text="Outdoor Plants" textFill="#656565">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="101.0" layoutX="129.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/grass.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="154.0" layoutY="443.0" text="10" />
+            <Label layoutX="154.0" layoutY="507.0" text="15" />
+            <Label layoutX="756.0" layoutY="371.0" text="Place Order Plants">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Circle fill="#ccf5c9" layoutX="728.0" layoutY="432.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+            <Circle fill="#99d38f" layoutX="830.0" layoutY="432.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+            <Circle fill="#8eeb87" layoutX="930.0" layoutY="432.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+            <Label layoutX="703.0" layoutY="462.0" text="Today " textFill="#656565">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="792.0" layoutY="464.0" text="This Week" textFill="#656565">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="886.0" layoutY="464.0" text="This Month" textFill="#656565">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="59.0" layoutX="793.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/shopping.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="91.0" layoutY="44.0" prefHeight="27.0" prefWidth="107.0" text="Total Plants">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="415.0" layoutY="372.0" text="Active Employees">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="639.0" layoutY="276.0" orientation="VERTICAL" prefHeight="278.0" prefWidth="1.0" />
+            <ImageView fitHeight="70.0" fitWidth="101.0" layoutX="455.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/usergroups.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="447.0" layoutY="410.0" prefHeight="70.0" prefWidth="86.0" style="-fx-background-color: #ccf5c9; -fx-background-radius: 10;" text="01">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <PieChart fx:id="pieHash" labelLineLength="5.0" layoutX="44.0" layoutY="80.0" legendSide="RIGHT" prefHeight="116.0" prefWidth="125.0" stylesheets="@../style.css">
+               <styleClass>
+                  <String fx:value="chart-pie" />
+                  <String fx:value="data()" />
+                  <String fx:value="data1" />
+               </styleClass>
+            </PieChart>
+            <Label layoutX="298.0" layoutY="44.0" prefHeight="27.0" prefWidth="107.0" text="Total Orders">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="490.0" layoutY="44.0" prefHeight="27.0" prefWidth="135.0" text="Total Delivered">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Pane layoutX="281.0" layoutY="80.0" prefHeight="150.0" prefWidth="166.0">
+               <children>
+                  <Label layoutX="33.0" layoutY="34.0" prefHeight="79.0" prefWidth="101.0" text="10">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <Pane layoutX="481.0" layoutY="80.0" prefHeight="150.0" prefWidth="166.0">
+               <children>
+                  <Label layoutX="40.0" layoutY="34.0" prefHeight="79.0" prefWidth="101.0" text="05">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children></AnchorPane>
+      <AnchorPane fx:id="adminDashboardPageContext" layoutX="260.0" prefHeight="50.0" prefWidth="1040.0" stylesheets="@../style.css">
+         <children>
+            <Label fx:id="lblDate" layoutX="738.0" layoutY="7.0" prefHeight="35.0" prefWidth="125.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="lblTime" layoutX="917.0" layoutY="7.0" prefHeight="35.0" prefWidth="118.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="688.0" layoutY="14.0" text="Date  :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="865.0" layoutY="14.0" text="Time  :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="10.0" text="Green Plant SL " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/menuIcon.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

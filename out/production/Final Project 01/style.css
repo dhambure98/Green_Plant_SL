@@ -1,0 +1,641 @@
+/*-------------- Lording Page ------------------*/
+#clickbutton{
+    -fx-background-color: linear-gradient(#8dd65d,#70d67c);
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 10px;
+    -fx-transition: all 0.5s;
+}
+#clickbutton span{
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+#clickbutton :hover span{
+    -fx-padding-right: 25px;
+}
+
+
+/*-------------- Login Page --------------------*/
+#loginLabalOne {
+    -fx-background-color: linear-gradient(#9ee874,#a9da96);
+    -fx-background-radius: 10;
+    -fx-border: 20px;
+    -fx-pane-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#loginbtn {
+    -fx-background-color: #71a951;
+    -fx-background-radius: 15;
+    -fx-border: 1px;
+    -fx-text-alignment: center;
+    -fx-font-size: 18px;
+    -fx-font-family: Sans-serif;
+    -fx-font-style: normal;
+    -fx-font-weight: bold;
+    -fx-button-opacity: 1px;
+    -fx-cursor: hand;
+}
+#usernameFont {
+    -fx-font-style: normal;
+    -fx-font-family: Arial;
+    -fx-font-size: 20px;
+}
+#passwordFont {
+    -fx-font-style: normal;
+    -fx-font-family: Arial;
+    -fx-font-size: 20px;
+}
+#txtUserName {
+    -fx-border-color: #6cb560;
+    -fx-border-radius: 5px;
+    -fx-box-sizing: border-box;
+    -fx-border: none;
+    -fx-margin: 8px 0;
+}
+#txtPassword {
+    -fx-border-color: #6cb560;
+    -fx-border-radius: 5px;
+    -fx-box-sizing: border-box;
+    -fx-border: none;
+    -fx-margin: 8px 0;
+}
+
+/*---------------- Admin Dashboard Form Css -----------------*/
+/*------ Home -------*/
+#btnAdminHome {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 8px;
+    -fx-transition: all 0.5s;
+}
+#btnAdminHome span {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*----- plant categories --------*/
+#btnPlantCategories {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 8px;
+    -fx-transition: all 0.5s;
+}
+#btnPlantCategories span {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*----- Add plant ------*/
+#btnAddPlant {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 8px;
+    -fx-transition: all 0.5s;
+}
+#btnAddPlant span {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*----- Employee -----*/
+#btnEmployee {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 8px;
+    -fx-transition: all 0.5s;
+}
+#btnEmployee span {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*----- Supplier ------*/
+#btnSupplier {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 8px;
+    -fx-transition: all 0.5s;
+}
+#btnSupplier span {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*----- Customer -----*/
+#btnCustomer {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 8px;
+    -fx-transition: all 0.5s;
+}
+#btnCustomer span {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*----- Payment -----*/
+#btnPayment {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 8px;
+    -fx-transition: all 0.5s;
+}
+#btnEmployee span {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*---- Settings -----*/
+#btnSettings {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 8px;
+    -fx-transition: all 0.5s;
+}
+#btnSettings spen{
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*---- LogOut ------*/
+#btnLogOut {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 8px;
+    -fx-transition: all 0.5s;
+}
+#btnLogOut span {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+#adminDashboardPageContext{
+    -fx-background-color: linear-gradient(#6cb560,#96d28e);
+}
+#admindashboardAnchorPane{
+    -fx-background-color: linear-gradient(#6cb560,#b2f0aa);
+}
+#adminPaneOne{
+    -fx-background-color: linear-gradient(#e1f6df,#c8fab5);
+    -fx-background-radius: 10;
+    -fx-padding: 20px;
+    -fx-display: flex;
+}
+.chart-pie{
+    -fx-border-color: derive(-fx-pie-color, 1%);
+    -fx-border-width: 0px;
+}
+.data0.chart-pie{
+    -fx-pie-color: #fdbb2d;
+}
+.data1.chart-pie{
+    -fx-pie-color: #22c1c3;
+}
+
+/*-------------- Cashier Dashboard Css ----------*/
+/*---- Home ----*/
+#btnHomeCashier {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 8px;
+    -fx-transition: all 0.5s;
+}
+#btnHomeCashier spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*---- Place order -----*/
+#btnPlaceOrder {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 8px;
+    -fx-transition: all 0.5s;
+}
+#btnPlaceOrder spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*---- Delivery -----*/
+#btnDelivery {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 8px;
+    -fx-transition: all 0.5s;
+}
+#btnDelivery spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+#cashierDashboardPageContext{
+    -fx-background-color: linear-gradient(#6cb560,#96d28e);
+}
+#cashierdashboardAnchorPane{
+    -fx-background-color: linear-gradient(#6cb560,#b2f0aa);
+}
+
+
+/*---------------- Customer Form -----------------*/
+/*------ Add Customer -------*/
+#btnAddCustomer {
+    -fx-background-color:  #91ee80;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+#btnAddCustomer-report {
+    -fx-background-color: rgba(69, 66, 66, 0.7);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: Ubuntu;
+}
+
+/*------- Update Customer ----------*/
+#btnUpdateCustomer {
+    -fx-background-color:  #91ee80;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+#btnUpdateCustomer-report {
+    -fx-background-color: rgba(69, 66, 66, 0.7);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: Ubuntu;
+}
+
+/*------- Delete Customer -----------*/
+#btnDeleteCustomer {
+    -fx-background-color: #e36743;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+#btnDeleteCustomer-report {
+    -fx-background-color: rgba(69, 66, 66, 0.7);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: Ubuntu;
+}
+
+/*------- Btn Customer Report --------*/
+#btnCustomerReport {
+    -fx-background-color:  #91ee80;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+/*------ Delivery Form ----------------*/
+/*--------Add button ------*/
+#btnAddDeliver {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnAddDeliver spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*------ Delete Button -------*/
+#btnDeleteDelivery{
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnDeleteDelivery spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*----- delivery Report ----*/
+#btnDeliveryReport {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnDeliveryReport spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*----------- Employee From ------------*/
+/*------ Add Employee -------*/
+#btnAddEmployee {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnAddEmployee spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*------- Delete Employee --------*/
+#btnDeleteEmployee {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnDeleteEmployee spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*-------- Update employee --------*/
+#btnUpdateEmployee {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnUpdateEmployee spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*-------- Employee report ---------*/
+#btnEmployeeReport {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnEmployeeReport spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*--------- Payment Form ------------*/
+/*----- Add Payment ----------*/
+#btnAddPayement {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnAddPayement spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*-------- Report -------*/
+#btnPayement {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnPayement spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+
+/*---------- Add plant Production ------*/
+/*----- Add Plant ----------*/
+#btnAddPlant {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnAddPlant spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*------- Update plant ---------*/
+#btnUpdatePlantOnAction {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnUpdatePlantOnAction spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*--------- Delete plant ----------*/
+#btnDeletePlant {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnDeletePlant spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*------- Place order Form ---------*/
+/*------ Search button ------*/
+#btnSearch {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnSearch spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*------ Clear ------*/
+#btnClear {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnClear spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*----- Add to cart ------*/
+#btnAddToCart {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnAddToCart spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*----- Place order --------*/
+#btnPlaceOrder {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnPlaceOrder spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*------ Settings Form ---------*/
+/*--- edit button -----*/
+#btnEdit{
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnEdit spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+
+/*----- save button -------*/
+#btnSave {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-padding: 4px;
+    -fx-transition: all 0.5s;
+}
+#btnSave spen {
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-transition: 0.5s;
+    -fx-opacity: 1;
+}
+

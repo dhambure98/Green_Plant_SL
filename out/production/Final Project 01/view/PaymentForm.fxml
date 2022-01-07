@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentFormController">
+   <children>
+      <Pane prefHeight="50.0" prefWidth="1040.0" style="-fx-background-color: #68c955;">
+         <children>
+            <Label layoutX="434.0" layoutY="7.0" text="Payment Form" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="30.0" layoutY="70.0" text="Employee Payment Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="275.0" layoutY="82.0" prefHeight="0.0" prefWidth="729.0" />
+      <Label layoutX="30.0" layoutY="146.0" text="Employee ID" />
+      <TextField fx:id="id" layoutX="144.0" layoutY="146.0" prefHeight="25.0" prefWidth="166.0" />
+      <Label layoutX="125.0" layoutY="146.0" text=":     " />
+      <Label layoutX="30.0" layoutY="109.0" text="Payment ID" />
+      <TextField fx:id="paymentId" layoutX="144.0" layoutY="109.0" prefHeight="25.0" prefWidth="166.0" />
+      <Label layoutX="125.0" layoutY="109.0" text=":     " />
+      <Label layoutX="349.0" layoutY="109.0" text="Employee Salary" />
+      <TextField fx:id="salary" layoutX="467.0" layoutY="109.0" prefHeight="25.0" prefWidth="166.0" />
+      <Label layoutX="448.0" layoutY="109.0" text=":     " />
+      <Label layoutX="349.0" layoutY="147.0" text="Date" />
+      <TextField fx:id="date" layoutX="467.0" layoutY="147.0" prefHeight="25.0" prefWidth="166.0" />
+      <Label layoutX="448.0" layoutY="147.0" text=":     " />
+      <Label layoutX="695.0" layoutY="111.0" text="Payment Methord" />
+      <TextField fx:id="paymentMethord" layoutX="838.0" layoutY="109.0" prefHeight="25.0" prefWidth="173.0" />
+      <Label layoutX="819.0" layoutY="109.0" text=":     " />
+      <Button fx:id="btnAddPayement" layoutX="839.0" layoutY="148.0" mnemonicParsing="false" onAction="#addPaymentOnAction" prefHeight="25.0" prefWidth="173.0" style="-fx-background-color: #91ee80;" stylesheets="@../style.css" text="Add Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="25.0" layoutY="194.0" prefHeight="3.0" prefWidth="992.0" />
+      <TableView fx:id="payTable" layoutX="25.0" layoutY="206.0" prefHeight="335.0" prefWidth="992.0">
+        <columns>
+          <TableColumn fx:id="payId" prefWidth="146.0" text="Payment ID" />
+          <TableColumn fx:id="empId" prefWidth="184.0" text="Employee ID" />
+            <TableColumn fx:id="empSalary" prefWidth="230.0" text="Employee Salary" />
+            <TableColumn fx:id="payDate" prefWidth="202.0" text="Date" />
+            <TableColumn fx:id="paymentType" prefWidth="229.0" text="Payment Methord" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnPayement" layoutX="27.0" layoutY="550.0" mnemonicParsing="false" onMouseClicked="#PayementReportExport" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: #91ee80;" stylesheets="@../style.css" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="48.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/graphreport.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
