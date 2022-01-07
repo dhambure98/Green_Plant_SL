@@ -49,7 +49,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Copyright @ 2021 My Profile All Right Reserved By Yasiru Dahanayaka
+Copyright @ 2021 | All Right Reserved By Akila Dhambure Liyanage
 
 
 
